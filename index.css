@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+header nav {
+    background-color: pink;
+    position: sticky;
+    top: 0;
+    padding: 5px ;
+    overflow: auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.awalan section {
+    width: 70%;
+}
+.awalan {
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 60px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.foto {
+    border-radius: 50%;
+    display: block;
+    align-items: center;
+}
+  
+
+.isi {
+    width: 70%;
+    margin: auto;
+    padding: 30px 60px
+}
+
+form {
+    display: grid;
+    grid-template-columns: 80px 0.5fr;
+    gap: 20px;
+}
+
+@media screen and (max-width: 640px){
+    .awalan {
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 1024px){
+    .awalan section {
+        width: 100%;
+        
+    }
+
+    .isi {
+        width: 100%;
+    }
+}
